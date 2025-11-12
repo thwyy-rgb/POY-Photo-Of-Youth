@@ -21,6 +21,9 @@ body{
     padding-right: 20px;
     padding-bottom: 24px;
 
+    position: sticky;
+    top: 0;
+    background-color: rgb(253, 251, 240);
 
 }
 
@@ -216,4 +219,74 @@ body{
 
 .footer .in4clb a + a {
     margin-left: 20px;
+}
+
+
+.popup {
+  display: none;
+}
+
+
+.popup:target {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow-y: auto; 
+
+}
+
+.popup .popupinner {
+  background-color: #fff;
+  border-radius: 16px;
+  max-width: 520px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+
+
+  padding: 30px;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  z-index: 1000;
+}
+.popup .close:hover {
+  color: #b00;
+}
+
+
+.popup .popup-img {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+
+.popup .popup-content {
+  padding: 16px 18px;
+  overflow-y: auto;
+  flex: 1;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #4a2a2a;
+  background-color: #fff;
 }
