@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(253, 251, 240);
+    color: rgb(62, 7, 3);
+    font-family: 'Montserrat';  
+    box-sizing: border-box; 
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+
+    position: sticky;
+    top: 0;
+    background-color: rgb(253, 251, 240);
+
+}
+
+.navbar a{
+  text-decoration: none;
+  color: rgb(62, 7, 3);
+  font-weight: 500;
+  font-family: "Dongle";
+  font-size: 20px;
+}
+
+.navbar a:hover{
+    color: rgb(168, 41, 41);
+}
+
+.header .left .logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.header .left .note{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-family: "Dongle";
+    font-size: 20px;
+}
+
+.header .left{
+    display: flex;
+    align-items: center;
+    
+}
+
+.header .navbar a+a {
+    padding-left: 24px;
+}
+
+
+.hero {
+  width: 100%; 
+  margin: 0; 
+  padding:0;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover; 
+  display: block;
+  aspect-ratio: 12/7;
+}
+
+.About{
+    padding-top: 100px ;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 140px;
+   background-color: rgb(33, 45, 120);
+   color: rgb(253, 251, 240)
+}
+.About .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 0px ;
+    font-family: "Dongle";
+}
+
+.About .top h2{
+    font-size: 50px;
+}
+
+.About .top p{
+    font-size:20px ;
+    font-family: "Montserrat";
+}
+
+.About .bottom .part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.About .bottom .part1 p{
+    font-size: 17px;
+    text-align: justify;
+    padding-left: 20px;
+    align-items: stretch;
+
+}
+
+.About .bottom .part1 img{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.About .bottom .part2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 30px ;
+}
+.About .bottom .part2 p{
+    font-size: 17px;
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    text-align: right
+
+}
+
+.About .bottom .part2 img{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.Projects {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 200px ;
+}
+
+
+.Projects .top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  text-align: right;     
+  padding: 20px;
+  margin-top: 90px;
+  font-size: 50px;
+  font-family: "Dongle";
+}
+
+
+.Projects .top p {
+  font-size: 20px;
+  font-family: "Monserrat";
+  padding: 10px;
+}
+
+
+.Projects .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  margin-top: 30px;
+  font-family: "Dongle";
+  
+}
+
+
+
+.Projects .bottom .project1 img,
+.Projects .bottom .project2 img,
+.Projects .bottom .project3 img,
+.Projects .bottom .project4 img {
+  width: 263px;
+  height: 322px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.Projects .bottom h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+
+
+.Projects .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin-top: 30px ;
+    flex-wrap: wrap; 
+}
+
+.footer{
+    background-color: rgb(163, 29, 29);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+.footer .info a, .footer .Home a{
+    text-decoration: none;
+    color: rgb(37,7,8);
+}
+
+.footer .info p{
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .in4clb {
+    display: flex;
+    flex-direction: row;;
+}
+
+.footer .in4clb a + a {
+    margin-left: 20px;
+}
+
+.footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header .left .note {
+        display: none;
+    }
+
+    
+    .header {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    
+    
+    .header .navbar {
+        margin-top: 15px;
+    }
+
+    
+    .header .navbar a + a {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .About {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+   
+    .About .bottom .part1,
+    .About .bottom .part2 {
+        flex-direction: column;
+    }
+
+   
+    .About .bottom .part1 img,
+    .About .bottom .part2 img {
+        width: 100%; 
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    
+    .About .bottom .part1 p,
+    .About .bottom .part2 p {
+        font-size: 16px; 
+        padding: 10px 0;
+        text-align: left;
+    }
+}
+
+@media (max-width: 992px) {
+    
+    .Projects .bottom {
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+    }
+
+    
+    .Projects .bottom > div {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .Projects .bottom .project1 img,
+    .Projects .bottom .project2 img,
+    .Projects .bottom .project3 img,
+    .Projects .bottom .project4 img {
+        width: 100%;
+        object-fit: cover; 
+        display: block;
+        aspect-ratio: 302/380;
+        
+    }
+
+    
+    .Projects .top {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+section {
+    scroll-margin-top: 95px;
+}
+
+
+.Contact {
+    background-color: #FCF9EA;
+
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 180px;
+    padding-top: 60px;
+    margin-top: 200px;
+}
+
+.TopContact h2{
+    font-family: "Dongle";
+    font-size: 60px;
+}
+.TopContact p{
+    font-size: 23px;
+}
+
+.botContact .userin4 input {
+    width: 85%;
+    height: 30px;
+    border-radius:20px;
+}
+
+.botContact input{
+    width:40px;
+    height:20px;
+}
+
+input[type="submit"] {
+    
+    padding: 10px 20px 10px; 
+    width: auto; 
+    
+    background-color: #A31D1D; 
+    color: #FCF9EA; 
+    border: none; 
+    border-radius: 5px; 
+    
+    
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer; 
+    font-family: 'Montserrat', sans-serif;
+
+    display: block; 
+    margin: 20px 0 0 0;
+
+    line-height: 0.3;
+    
+
+}
+
+
+ .botContact {
+    font-size: 20px;
+}
+
+.TopContact{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px){
+    .Contact{
+        padding-left: 47px;
+        padding-right: 30px;
+    }
+
+    .TopContact h2{
+    font-family: "Dongle";
+    font-size: 30px;
+    }
+
+    .TopContact p{
+    font-size: 16px;
+    }
+
+    .botContact {
+    font-size: 18px;
+    }
+
+    .botContact .userin4 input {
+    width: 85%;
+    height: 20px;
+    border-radius:20px;
+}
+    
+}
+
+.News {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 30px;
+  margin-top: 10px;
+  padding-bottom: 170px ;
+  background-color: #A31D1D;
+  
+}
+
+
+.News .top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  text-align: right;     
+  font-size: 50px;
+  font-family: "Dongle";
+  color: #FCF9EA;
+  padding-right: 40px;
+}
+
+
+.News .top p {
+  font-size: 20px;
+  font-family: "Monserrat";
+}
+
+
+.News .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  margin-top: 30px;
+  font-family: "Dongle";
+  color: #FCF9EA;
+}
+
+
+
+.News .bottom .News1 img,
+.News .bottom .News2 img,
+.News .bottom  img {
+    width: 500px;
+    height: auto;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.News .bottom h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.News .bottom1 a {
+    width: 100%;
+}
+
+.News .bottom1 .News3{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 50px ;
+   color: #FCF9EA;
+}
+.News .bottom1 .News3 img{
+    width: 500px;
+    height: auto;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.News .bottom1 .News3 h4{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Dongle";
+    font-size: 20px;
+}
+
+.News .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin-top: 30px ;
+    flex-wrap: wrap; 
+}
+
+@media (max-width: 992px) {
+    
+    .News .bottom, .News .bottom1 {
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+    }
+
+    
+    .News .bottom, .News .bottom1 > div {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .News .bottom .News1 img,
+    .News .bottom .News2 img,
+    .News .bottom1 .News3 img
+    {
+        width: 100%;
+        object-fit: cover; 
+        display: block;
+        aspect-ratio: 302/380;
+        
+    }
+
+    
+    .News .top {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .News {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+   
+    .News .bottom .News1,
+    .News .bottom .News2,
+    .News .bottom1 .News3 {
+        flex-direction: column;
+    }
+
+   
+    .News .bottom .News1 img,
+    .News .bottom .News2 img,
+    .News .bottom1 .News3 img {
+        width: 90%; 
+        height: auto;
+        aspect-ratio: 3/2;
+        margin-left: 13px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    
+   
+}

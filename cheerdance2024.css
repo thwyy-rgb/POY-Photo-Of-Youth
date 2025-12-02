@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box; 
+}
+.main .top h1{
+  font-family: "Dongle";
+  padding-left: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+}
+
+body{
+    background-color: rgb(253, 251, 240);
+    color: rgb(62, 7, 3);
+    font-family: 'Montserrat';  
+}
+
+.content > div {
+    display: flex;
+    align-items: center; 
+    width: 900px;
+    margin: 30px auto; 
+    gap: 30px; 
+    padding: 0 20px; 
+}
+
+/* KHỐI CHẴN (Ảnh phải, Chữ trái) */
+.oggies,
+.bupmangnon,
+.foxify,
+.agenty {
+    flex-direction: row-reverse; 
+    background-color: #FCF9EA;
+}
+
+/* Khoảng cách giữa các khối */
+.content > div + div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content img {
+    width: 50%; 
+    height: auto;
+    aspect-ratio: 3/2; 
+    border-radius: 30px;
+    object-fit: cover;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    
+
+    scroll-snap-align: none;
+}
+
+.content p {
+    width: 40%; 
+    margin-top: 0; 
+    font-size: 16px; 
+    line-height: 1.2;
+    font-weight: bold; 
+    white-space: pre-line;
+}
+
+.pinkpaw p,
+.holliez p,
+.fang p,
+.Quilin p,
+.mario p {
+    text-align: left;
+}
+
+
+.oggies p,
+.bupmangnon p,
+.foxify p,
+.agenty p {
+    text-align: right;
+}
+
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Dongle" ;
+
+    padding-left: 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+
+    position: sticky;
+    top: 0;
+    background-color: rgb(253, 251, 240);
+
+}
+
+.navbar a{
+  text-decoration: none;
+  color: rgb(62, 7, 3);
+  font-size: 20px;
+}
+
+.navbar a:hover {
+    color: rgb(168, 41, 41);
+}
+
+.header .left .note h3{
+  font-family: "Dongle";
+}
+
+.header .left .logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.header .left .note{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.header .left{
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer{
+    background-color: rgb(163, 29, 29);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+.footer .info a, .footer .Home a{
+    text-decoration: none;
+    color: rgb(62, 7, 3);
+}
+
+.footer .info p{
+    
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .in4clb {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .in4clb a + a {
+    margin-left: 20px;
+}
+.content img:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    z-index: 5;
+}
+
+@media (max-width: 992px) {
+  .content > div {
+    width: 95%; 
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .content > div {
+        flex-direction: column !important; 
+        align-items: center;
+        width: 95%; 
+        margin: 20px auto;
+        gap: 0;
+    }
+
+    
+    .content img,
+    .content p {
+        width: 100% !important; 
+    }
+    
+    .content img {
+        max-height: none; 
+    }
+
+    .content p {
+         margin-top: 15px; 
+         font-size: 16px;
+         text-align: center !important; /* Căn giữa trên mobile để dễ đọc */
+    }
+    
+    .pinkpaw, .holliez, .fang, .Quilin, .mario {
+        flex-direction: column !important;
+    }
+
+    .header {
+      flex-direction: row;
+      align-items: flex-start;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .navbar {
+      margin-top: 12px;
+    }
+
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer .in4clb {
+      margin-top: 10px;
+      justify-content: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+  .header .left .logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .header .left .note h3 {
+    font-size: 16px;
+  }
+
+  .main .top h1 {
+    font-size: 50px;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+  .footer .in4clb h5 {
+    font-size: 14px;
+  }
+}
